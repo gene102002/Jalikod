@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3ED;
+
+}
+
+.Parent {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF3ED;
+
+}
+
+.Header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #C94A4A;
+
+}
+
+.Header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    color: #2B2B2B;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-family: 'Poppins';
+
+
+}
+
+.Navbar {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2.5px solid #2B2B2B;
+    background-color: #FFF3ED;
+
+
+}
+
+.Navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: end;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+
+
+
+
+
+
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+
+}
+
+.Navbar ul li a:hover {
+
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+    border-radius: 10px;
+
+}
+
+.Main {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    background: url(/Photos/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+#Details {
+    background-color: rgb(0, 0, 0, 0.51);
+    color: #ece3e3;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+#Footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #C94A4A;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-size: x-large;
+}
+
+#Order {
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#Order:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Product {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    border-radius: 10px;
+    height: 100%;
+
+}
+
+.Top {
+    background-color: #C94A4A;
+    padding: 10px;
+    margin: 10px;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-size: 30px;
+}
+
+.Top:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+    cursor: pointer;
+}
+
+.Image {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+}
+
+.Image:hover {
+    background-color: #2B2B2B;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Prod {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    border-radius: 10px;
+    height: 100%;
+  
+
+}
+
+.Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(214, 214, 214, 0.51);
+
+
+}
+.Item button{
+    height: 50px;
+    width: 100px;
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+}
+.Item button:hover{
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Item img {
+    height: 90%;
+    width: 50%;
+    cursor: pointer;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+
+}
+
+
+.Item img:hover {
+    background-color: #2B2B2B;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Cartproduct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
