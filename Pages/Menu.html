@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolliekod</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="Parent">
+
+        <div class="Header">
+            <h1><i class="fa-solid fa-drumstick-bite"></i>Jolliekod</h1>
+        </div>
+        <div class="Navbar">
+            <ul>
+                <li><a href="/Index.html">Home</a></li>
+                <li><a href="/Index.html">Menu</a></li>
+                <li><a href="#Footer">About Us</a></li>
+
+            </ul>
+
+        </div>
+        <div class="Main">
+            <div id="order" hidden>
+                <h1>Your Order Has Been Placed !</h1>
+                <p>Present this to the cashier <br>
+                    Send the payment to "Click to zoom in"<br>
+                   <a href="/Photos/Qr_Payment.jpg"><img src="/Photos/Qr_Payment.jpg" alt="Qr Payment"></a> 
+                </p>
+                <h3>Order Number: </h3><br>
+                <h3 id="orderNumber"></h3>
+                <button id="okay">Close</button>
+            </div>
+            <div class="Product">
+
+
+                <div class="Top" id="Fishball">
+                    <h1>Fishball
+
+                    </h1>
+                    <img src="/Photos/Products/Fishballs.jpeg" alt="Photo of Fishballs">
+                    <p>
+                        Fishballs are a popular street food in the Philippines, made from finely ground fish meat mixed
+                        with flour and seasonings, then shaped into small balls and deep-fried until golden and crispy.
+                        They are often served with a variety of dipping sauces, making them a delicious and affordable
+                        snack enjoyed by many.
+                    </p>
+                    <br>
+                    <h3>Price: P30</h3>
+
+
+                </div>
+                <div id="FBall" class="Quantity" hidden>
+                    <label for="qty">Order Quantity</label> <br>
+                    <input type="number" name="Qty" id="Fishball-qty" placeholder="15pcs Per Quantity"><br>
+                    <button id="fballtotal">Add to Order</button>
+                    <button id="close_fball">Cancel</button>
+                </div>
+
+
+                <div class="Top" id="Quick">
+                    <h1>Kwek Kwek</h1>
+                    <img src="/Photos/Products/Kwek-Kwek.png" alt="Kwek Kwek">
+                    <p>
+                        Kwek-Kwek is a popular Filipino street food made of quail eggs coated in an orange batter and
+                        deep-fried until crispy. It's often served with a tangy vinegar dipping sauce, making it a
+                        delicious and addictive snack enjoyed by many.
+                    </p>
+                    <br>
+                    <h3>Price: P50</h3>
+                </div>
+                <div class="Quantity" id="Kwek" hidden>
+                    <label for="qty">Order Quantity</label> <br>
+                    <input type="number" name="Qty" id="Quick-qty" placeholder="10pcs Per Quantity"><br>
+                    <button id="kwektotal">Add to Order</button>
+                    <button id="close_kwek">Cancel</button>
+                </div>
+                <div class="Top" id="Gulaman">
+                    <h1>Gulaman</h1>
+                    <img src="/Photos/Products/Gulaman.png" alt="Gulaman">
+                    <p>
+                        Gulaman is a popular Filipino dessert made from agar-agar, a gelatinous substance derived from
+                        seaweed. It is often flavored with fruit juices or sweetened with sugar, and can be served in
+                        various forms such as cubes, strips, or even as a jelly-like consistency. Gulaman is commonly
+                        enjoyed as a refreshing treat, especially during hot weather, and is often used as a base for
+                        other desserts like halo-halo or as a topping for shaved ice.
+                    </p>
+                    <br>
+                    <h3>Price: P20</h3>
+                </div>
+                <div id="Guls" class="Quantity" hidden>
+                    <label for="qty">Order Quantity</label> <br>
+                    <input type="number" name="Qty" id="Guls-qty" placeholder="1 Cup Per Quantity"><br>
+                    <button id="Gulstotal">Add to Order</button>
+                    <button id="close_guls">Cancel</button>
+                </div>
+
+
+
+                <div class="Top" id="Dragon" hidden>
+                    <h1>Dragon Balls</h1>
+                    <img src="/Photos/Products/Dragonballs.jpg" alt="Dragon Balls">
+                    <p>
+                        Dragon Balls are a popular snack in the Philippines, made from a mixture of ground pork, shrimp,
+                        and vegetables, shaped into small balls and deep-fried until golden and crispy. They are often
+                        served with a sweet and tangy dipping sauce, making them a delicious and satisfying treat
+                        enjoyed by many.
+                    </p>
+                    <br>
+                    <h3>Price: P100</h3>
+                </div>
+
+                <div id="Dball" class="Quantity" hidden>
+                    <label for="qty">Order Quantity</label> <br>
+                    <input type="number" name="Qty" id="Dqty" placeholder="1pc Per Quantity"><br>
+                    <button id="Dtotal">Add to Order</button>
+                    <bu tton id="close_dball">Cancel</button>
+                </div>
+
+
+            </div>
+
+            <div class="Buttons">
+                <button id="Checkout-btn">Check Out Now!</button>
+                <button id="Special">Special of The Day</button>
+
+
+            </div>
+            <div class="form" hidden>
+                <label for="Name">Full Name:</label><br>
+                <input type="text" id="Name" placeholder="Jayson Lipumano"><br>
+                <label for="Address" class="address">Address:</label><br>
+                <input type="text" id="Address" placeholder="Zone 6 brgy.Camaya "><br>
+                <label for="Number">Contact Number:</label><br>
+                <input type="text" id="Number" placeholder="09099781102"> <br>
+                <label for="Receive">Pick Up Method</label><br>
+                <select name="Receive" id="Receive">
+                    <option value="Pick up">Pick up</option>
+                    <option value="Delivery">Delivery</option>
+                </select> <br>
+                <button id="submit">Submit</button>
+                <button id="cancel">Cancel</button>
+            </div>
+
+            <div class="Checkout" hidden>
+                <div><button id="close">X</button></div>
+                <div id="PersonalDetail">
+                    <h6>Name:</h6>
+                    <p id="name"></p>
+                    <h6>Address:</h6>
+                    <p id="address"></p>
+                    <h6>Contact Number:</h6>
+                    <p id="number"></p>
+                    <h6>Pick Up Method:</h6>
+                    <p id="method"></p>
+                </div>
+                <h1>Orders</h1>
+
+                <table>
+
+                    <div id="Table">
+
+                    </div>
+
+            </div>
+            </table>
+            <div id="Total">
+                <table>
+                    <tr>
+                        <th>Total</th>
+                        <td id="total"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div id="button">
+                <button id="Checkout-Button">Check Out</button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div id="Footer">
+        <p>&copy; 2023 Gene's Eatery</p>
+        <br>
+        <p>Welcome to Gene's Eatery, where we serve up delicious and authentic American comfort food in a warm and
+            inviting atmosphere. <br> Enjoy hearty meals made with fresh ingredients and love, and create memorable
+            moments with our signature dishes and friendly service.</p>
+
+    </div>
+    </div>
+
+</body>
+<script src="/Javascript/script.js">
+
+</script>
+
+</html>

@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3ED;
+
+}
+
+.Parent {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF3ED;
+
+}
+
+.Header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #C94A4A;
+
+}
+
+.Header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    color: #2B2B2B;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-family: 'Poppins';
+
+
+}
+
+.Navbar {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2.5px solid #2B2B2B;
+    background-color: #FFF3ED;
+
+
+}
+
+.Navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: end;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+
+
+
+
+
+
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+
+}
+
+.Navbar ul li a:hover {
+
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+    border-radius: 10px;
+
+}
+
+.Main {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    background: url(/Photos/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    height: 100vh;
+
+}
+
+#Details {
+    background-color: rgb(0, 0, 0, 0.51);
+    color: #ece3e3;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+#Footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #C94A4A;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-size: x-large;
+
+}
+
+#Order {
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#Order:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Product {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    border-radius: 10px;
+    height: 100%;
+
+
+}
+
+.Top {
+    background-color: #C94A4A;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    width: 1000%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    font-size: 20px;
+    flex-wrap: wrap;
+
+}
+
+.Top:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+    cursor: pointer;
+}
+
+.Top img {
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 105%;
+}
+
+.Buttons button {
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.Buttons button:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
+}
+
+.Checkout {
+    background-color: wheat;
+
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    border-radius: 10px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 25%;
+
+
+
+
+}
+
+.Checkout button {
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#Table table,
+th,
+td,
+tr {
+    border: black 2px solid;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+#close {
+    background-color: #C94A4A;
+    height: 6%;
+    width: 6%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 1px 1px 1px;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Quantity {
+    background-color: wheat;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.Quantity label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.Quantity input {
+    border: 1px solid;
+    border-radius: 10%;
+    height: 40px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+
+
+
+}
+
+.Quantity button {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: #2B2B2B 1px 1px 1px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Quantity ::placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    opacity: 80%;
+
+}
+
+.form {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    background-color: wheat;
+    padding: 10px;
+    height: 50%;
+    width: 30%;
+    font-size: 20px;
+
+}
+
+.form label {
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: bold;
+
+}
+
+.form input {
+    height: 10%;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: #2B2B2B 1px 1px 1px;
+    margin: 10px;
+    text-align: center;
+
+
+}
+
+.form ::placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    opacity: 60%;
+}
+
+.form select {
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: #C94A4A 0px 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: #C94A4A;
+    background-color: #2B2B2B;
+}
+
+.form button {
+
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: #C94A4A 0px 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#PersonalDetail {
+    font-size: 20px;
+    text-align: justify;
+
+}
+#order{
+    background-color: wheat;
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    border-radius: 10px;
+    box-shadow: #2B2B2B 0px 5px 15px;
+    padding: 10px;
+    height: auto;
+    width: 30%;
+    text-align: center;
+    
+}
+#order h1{
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin: 20px;
+}
+#order p{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin: 20px;
+}
+#orderNumber{
+    font-size: 100px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin: 20px;
+}
+#order img{
+    height: 300px;
+    width: 300px;
+}
+#okay{
+    background-color: #2B2B2B;
+    height: 50px;
+    width: 200px;
+    color: #C94A4A;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: #C94A4A 0px 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
