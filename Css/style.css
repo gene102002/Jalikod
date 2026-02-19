@@ -111,7 +111,7 @@ body {
     background-size: cover;
     height: auto;
     box-shadow: #2B2B2B 0px 5px 15px;
-    background: url(/Photos/Bg.png);
+    background: url(Photos/Bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -488,4 +488,5 @@ tr {
     box-shadow: #C94A4A 0px 5px 15px;
     cursor: pointer;
     font-weight: bold;
+
 }
