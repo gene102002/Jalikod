@@ -7,6 +7,9 @@
     <title>Jolliekod</title>
     <link rel="stylesheet" href="../Css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -26,11 +29,16 @@
 
         </div>
         <div class="Main">
+
+            <div id="Addcart" hidden >
+                <h2></h2>
+                <h2>Has been added to your cart</h2>
+            </div>
             <div id="order" hidden>
                 <h1>Your Order Has Been Placed !</h1>
                 <p>Present this to the cashier <br>
                     Send the payment to "Click to zoom in"<br>
-                   <a href="../Photos/Qr_Payment.jpg"><img src="../Photos/Qr_Payment.jpg" alt="Qr Payment"></a> 
+                    <a href="../Photos/Qr_Payment.jpg"><img src="../Photos/Qr_Payment.jpg" alt="Qr Payment"></a>
                 </p>
                 <h3>Order Number: </h3><br>
                 <h3 id="orderNumber"></h3>
@@ -114,7 +122,7 @@
                     <br>
                     <h3>Price: P100</h3>
                 </div>
-                
+
                 <div id="Dball" class="Quantity" hidden>
                     <label for="qty">Order Quantity</label> <br>
                     <input type="number" name="Qty" id="Dqty" placeholder="1pc Per Quantity"><br>
@@ -161,15 +169,24 @@
                 </div>
                 <h1>Orders</h1>
 
-                <table>
+                
 
                     <div id="Table">
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
 
+                        </tbody>
+                        </table>
                     </div>
-
-            </div>
-            </table>
-            <div id="Total">
+                    <div id="Total">
                 <table>
                     <tr>
                         <th>Total</th>
@@ -183,6 +200,11 @@
                 <button id="Checkout-Button">Check Out</button>
             </div>
 
+
+                
+            </div>
+           
+            
 
         </div>
 

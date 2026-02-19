@@ -267,12 +267,16 @@ body {
     border-radius: 10px;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 25%;
     right: 25%;
 
 
 
-
+}
+.Checkout button:hover {
+    background-color: #2B2B2B;
+    color: #C94A4A;
+    box-shadow: #C94A4A 0px 5px 15px;
 }
 
 .Checkout button {
@@ -298,7 +302,16 @@ tr {
     margin: 50px;
     padding: 10px;
     text-align: center;
+    font-size: 12px;
+    
 
+}
+#Table {
+    
+    position: relative;
+    right: -30%;
+   
+    
 
 }
 
@@ -404,12 +417,21 @@ tr {
 
 }
 
-.form ::placeholder {
+
+
+.form input:focus {
+    box-shadow: #C94A4A 0px 5px 15px;
+    background-color: #5e5a5a3d;
+    color: #C94A4A;
+}   
+
+.form ::placeholder {   
     text-align: center;
     font-size: 15px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     opacity: 60%;
+    font-weight: bold;
 }
 
 .form select {
@@ -443,6 +465,7 @@ tr {
     text-align: justify;
 
 }
+
 #order{
     background-color: wheat;
     color: black;
@@ -491,3 +514,22 @@ tr {
     font-weight: bold;
 
 }
+#Addcart{
+    background-color:  #FFF3E0;
+    height: 50px;
+    width: 200px;
+    color: #5C1A1A;
+    border-radius: 30px;
+    margin: 10px;
+    font-weight: bold;
+    left: 43%;
+    top: 8%;
+    position: absolute;
+
+}
+.Quantity button:hover{
+    background-color: #C94A4A;
+    color: #2B2B2B;
+    
+}
+

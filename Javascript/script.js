@@ -25,6 +25,19 @@ $(document).ready(function () {
         qty = [];
     }
 
+    function orader_Table(){
+
+        $(" tbody").empty();
+        
+        
+        for (let i = 0; i < product.length; i++) {
+            
+            $("#Table tbody").append("<tr><td>" + product[i] + "</td><td>" + qty[i] + "</td><td>" + Price[i] + "</td></tr>");
+            
+        }
+        
+    }
+
 
 
     $('.Menu').click(function () {
@@ -62,9 +75,13 @@ $(document).ready(function () {
         total += primary_Value;
         qty.push($("#Fishball-qty").val());
         Price.push(30);
+
+        $('#Addcart').fadeIn(500);
+         $('#Addcart').fadeOut(3000);
+        
     
         $('#FBall').fadeOut(200);
-
+         
 
     });
 
@@ -87,7 +104,8 @@ $(document).ready(function () {
         total += primary_Value;
         qty.push($("#Quick-qty").val());
         Price.push(50);
-      
+        $('#Addcart').fadeIn(500);
+         $('#Addcart').fadeOut(3000);
         $('#Kwek').fadeOut(200);
 
 
@@ -110,7 +128,8 @@ $(document).ready(function () {
             alert("Please enter a quantity");
             return;
         }
-
+        $('#Addcart').fadeIn(500);
+         $('#Addcart').fadeOut(3000);
         let primary_Value = $("#Guls-qty").val() * 20;
         product.push("Gulaman");
         total += primary_Value;
@@ -131,6 +150,8 @@ $(document).ready(function () {
             alert("Please enter a quantity");
             return;
         }
+        $('#Addcart').fadeIn(500);
+         $('#Addcart').fadeOut(3000);
         product.push("Dragon Ball");
         Price.push(100);
         total += 100;
@@ -160,20 +181,20 @@ $(document).ready(function () {
 
     $('#Checkout-btn').click(function () {
         
+        
+        
+        orader_Table();
        
-        for (let x = 0; x < 1; x++) {
-            $('#Table').append('<tr><th>Product</th><th>Quantity</th><th>Price</th></tr>');
-        }
-        for (let i = 0; i < product.length; i++) {
-            $('#Table').append('<tr><td>' + product[i] + '</td><td>' + qty[i] + '</td><td>' + Price[i] + '</td></tr>');
-        }
-        $('#total').text(total);
+      
         orders.push(product);
         orders.push(qty);
         orders.push(Price);
-        orders.push(total);
-       
+        orders.push(total); 
         
+            
+        
+
+          $('#total').text(total);
 
         $('.form').fadeIn(300);
 
@@ -227,6 +248,7 @@ $(document).ready(function () {
         $('#Order-Count').text(order_Count);
         $('#orderNumber').text(order_Count);
         
+        
 
     });
 
@@ -234,6 +256,7 @@ $(document).ready(function () {
         $('#order').fadeOut(300);
         $('#Product').fadeIn(300);
         clear();
+        window.location.href="../index.html";
     });
 
 
