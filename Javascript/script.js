@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     $('.Menu').click(function () {
 
-        window.location.href = "/Pages/Menu.html";
+        window.location.href = "Pages/Menu.html";
 
     });
 
@@ -217,5 +217,6 @@ $(document).ready(function () {
         $('#Product').fadeIn(300);
         clear();
     });
+
 
 });
