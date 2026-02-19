@@ -52,6 +52,11 @@ $(document).ready(function () {
 
     });
     $('#fballtotal').click(function () {
+
+        if ($("#Fishball-qty").val() == 0) {
+            alert("Please enter a quantity");
+            return;
+        }
         let primary_Value = $("#Fishball-qty").val() * 30;
         product.push("Fishball");
         total += primary_Value;
@@ -73,6 +78,10 @@ $(document).ready(function () {
     });
     $('#kwektotal').click(function () {
 
+        if ($("#Quick-qty").val() == 0) {
+            alert("Please enter a quantity");
+            return;
+        }
         let primary_Value = $("#Quick-qty").val() * 50;
         product.push("Kwek-Kwek");
         total += primary_Value;
@@ -86,11 +95,9 @@ $(document).ready(function () {
     });
 
     $('#Gulaman').click(function () {
+        
         $('#Guls').fadeToggle(500);
-        product.push("Gulaman");
-        Price.push(20);
-        total += 20;
-        qty.push($("#Guls-qty").val());
+    
 
 
 
@@ -98,6 +105,12 @@ $(document).ready(function () {
     });
 
     $('#Gulstotal').click(function () {
+
+        if ($("#Guls-qty").val() == 0) {
+            alert("Please enter a quantity");
+            return;
+        }
+
         let primary_Value = $("#Guls-qty").val() * 20;
         product.push("Gulaman");
         total += primary_Value;
@@ -113,11 +126,16 @@ $(document).ready(function () {
 
     });
     $('#Dtotal').click(function () {
+
+        if ($("#Dqty").val() == 0) {
+            alert("Please enter a quantity");
+            return;
+        }
         product.push("Dragon Ball");
         Price.push(100);
         total += 100;
-        qty.push($("#D-qty").val());
-        $('#Dball').fadeOut(200);
+        qty.push($("#Dqty").val());
+        $('#Dball').fadeOut(200);   
 
     });
 
