@@ -31,14 +31,14 @@
         <div class="Main">
 
             <div id="Addcart" hidden >
-                <h2></h2>
-                <h2>Has been added to your cart</h2>
+                <h3> Order has been added to your cart</h3>
             </div>
             <div id="order" hidden>
                 <h1>Your Order Has Been Placed !</h1>
                 <p>Present this to the cashier <br>
                     Send the payment to "Click to zoom in"<br>
-                    <a href="../Photos/Qr_Payment.jpg"><img src="../Photos/Qr_Payment.jpg" alt="Qr Payment"></a>
+                    <img  id="Qr" src="../Photos/Qr_Payment.jpg" alt="Qr Payment"> 
+                    
                 </p>
                 <h3>Order Number: </h3><br>
                 <h3 id="orderNumber"></h3>
@@ -185,15 +185,9 @@
 
                         </tbody>
                         </table>
+                        
                     </div>
-                    <div id="Total">
-                <table>
-                    <tr>
-                        <th>Total</th>
-                        <td id="total"></td>
-                    </tr>
-                </table>
-            </div>
+                    <h3 class="Total">Total: ₱<span id="total"></span></h3>
 
 
             <div id="button">

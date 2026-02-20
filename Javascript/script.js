@@ -25,6 +25,11 @@ $(document).ready(function () {
         qty = [];
     }
 
+    $('#Qr').click(function () {
+       window.open("../Photos/Qr_Payment.jpg");
+    });
+
+
     function orader_Table(){
 
         $(" tbody").empty();
@@ -77,7 +82,7 @@ $(document).ready(function () {
         Price.push(30);
 
         $('#Addcart').fadeIn(500);
-         $('#Addcart').fadeOut(3000);
+         $('#Addcart').fadeOut(4000);
         
     
         $('#FBall').fadeOut(200);
@@ -105,7 +110,7 @@ $(document).ready(function () {
         qty.push($("#Quick-qty").val());
         Price.push(50);
         $('#Addcart').fadeIn(500);
-         $('#Addcart').fadeOut(3000);
+         $('#Addcart').fadeOut(4000);
         $('#Kwek').fadeOut(200);
 
 
@@ -129,7 +134,7 @@ $(document).ready(function () {
             return;
         }
         $('#Addcart').fadeIn(500);
-         $('#Addcart').fadeOut(3000);
+         $('#Addcart').fadeOut(4000);
         let primary_Value = $("#Guls-qty").val() * 20;
         product.push("Gulaman");
         total += primary_Value;
@@ -151,7 +156,7 @@ $(document).ready(function () {
             return;
         }
         $('#Addcart').fadeIn(500);
-         $('#Addcart').fadeOut(3000);
+         $('#Addcart').fadeOut(4000);
         product.push("Dragon Ball");
         Price.push(100);
         total += 100;
@@ -206,6 +211,9 @@ $(document).ready(function () {
     });
     
     $('#submit').click(function () {
+
+       
+
         personal_Details.name = $('#Name').val();
         personal_Details.address = $('#Address').val();
         personal_Details.phone = $('#Number').val();
@@ -226,6 +234,10 @@ $(document).ready(function () {
             $('#Name').css("border", "1px solid red");
 
         } else {
+            if(total == 0){
+            alert("Please make an order first");
+            return;
+        }   
             $('.form').fadeOut(300);
             
 
@@ -235,7 +247,7 @@ $(document).ready(function () {
         $('#method').text(personal_Details.method);
             $('.Checkout').fadeIn(500);
         }
-    
+         
         
 
     });
@@ -256,6 +268,7 @@ $(document).ready(function () {
         $('#order').fadeOut(300);
         $('#Product').fadeIn(300);
         clear();
+        
         window.location.href="../index.html";
     });
 

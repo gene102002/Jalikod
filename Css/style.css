@@ -269,13 +269,14 @@ body {
     position: absolute;
     top: 25%;
     right: 25%;
+    
 
 
 
 }
 .Checkout button:hover {
     background-color: #2B2B2B;
-    color: #C94A4A;
+    color: #833e3e;
     box-shadow: #C94A4A 0px 5px 15px;
 }
 
@@ -413,6 +414,8 @@ tr {
     box-shadow: #2B2B2B 1px 1px 1px;
     margin: 10px;
     text-align: center;
+    background-color: white;
+    font-size: 20px;
 
 
 }
@@ -421,8 +424,10 @@ tr {
 
 .form input:focus {
     box-shadow: #C94A4A 0px 5px 15px;
-    background-color: #5e5a5a3d;
+    background-color: white;
     color: #C94A4A;
+    font-weight: bolder;
+    font-size: 20px;
 }   
 
 .form ::placeholder {   
@@ -517,14 +522,21 @@ tr {
 #Addcart{
     background-color:  #FFF3E0;
     height: 50px;
-    width: 200px;
+    width: 500px;
     color: #5C1A1A;
     border-radius: 30px;
     margin: 10px;
     font-weight: bold;
-    left: 43%;
-    top: 8%;
+    left: 36%;
+    top: 10%;
     position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+    box-shadow: #5C1A1A 0px 5px 15px;
+   
+
 
 }
 .Quantity button:hover{
@@ -532,4 +544,12 @@ tr {
     color: #2B2B2B;
     
 }
+#Total{
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin: 20px;
+    position: relative;
+    top: 10px;
 
+}
